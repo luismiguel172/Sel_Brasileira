@@ -33,6 +33,10 @@ public class Selbrasileira_Activity extends AppCompatActivity {
         idRecyclerView = findViewById(R.id.idSelBrasileira);
         jogadorasList = new ArrayList<>();
 
+        jogadorasList.add(
+                new Jogadoras("")
+        )
+
 
     }
 }
