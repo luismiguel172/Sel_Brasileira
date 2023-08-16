@@ -13,17 +13,25 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import br.com.etecia.myapp.databinding.SelbrasileiraLayoutBinding;
 
 public class Selbrasileira_Activity extends AppCompatActivity {
 
-    private AppBarConfiguration appBarConfiguration;
-    private SelbrasileiraLayoutBinding binding;
+    RecyclerView idRecyclerView;
+    List<Jogadoras> jogadorasList;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        idRecyclerView = findViewById(R.id.idSelBrasileira);
+        jogadorasList = new ArrayList<>();
 
 
     }
